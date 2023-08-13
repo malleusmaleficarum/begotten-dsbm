@@ -1,0 +1,12 @@
+.modal {
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  pointer-events: none;
+  z-index: 3;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
