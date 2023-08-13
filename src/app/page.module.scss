@@ -13,23 +13,39 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
-    .logo {
-      max-width: 400px;
-      overflow: hidden;
-      cursor: pointer;
+    .hang {
+      height: 45%;
 
-      img {
-        width: 100%;
-        height: auto;
-        transform: translateY(0);
+      svg {
+        height: 100%;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      .logo {
+        max-width: 400px;
+        overflow: hidden;
+        cursor: pointer;
+
+        img {
+          width: 100%;
+          height: auto;
+          transform: translateY(0);
+        }
       }
     }
 
     .footer {
       p {
         font-size: 12px;
+        width: 100%;
       }
     }
   }

@@ -3,14 +3,14 @@
   text-align: center;
 
   .title {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
 
     .discotitle {
       cursor: pointer;
       position: relative;
-      mix-blend-mode: screen;
+      mix-blend-mode: difference;
     }
 
     .divider {

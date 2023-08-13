@@ -39,7 +39,7 @@ export default function index({ modal, disco }) {
     });
 
     return () => {
-      element.removeEventListener("mouseover", (e) => {
+      window.removeEventListener("mouseover", (e) => {
         posX(e.pageX);
         posY(e.pageY);
       });
