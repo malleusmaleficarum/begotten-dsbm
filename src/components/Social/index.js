@@ -4,7 +4,7 @@ import Bandcamp from "/public/images/bandcamp.svg?svgr";
 import Spotify from "/public/images/spotify.svg?svgr";
 import Link from "next/link";
 
-export default function index() {
+export default function Social() {
   return (
     <div className={style.social}>
       <Link href={"https://www.instagram.com/begottendsbm/"} target='_blank'>

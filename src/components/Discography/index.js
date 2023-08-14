@@ -47,7 +47,7 @@ const animText = {
   },
 };
 
-export default function index() {
+export default function Discography() {
   const [modal, setModal] = useState({ isActive: false, index: 0 });
 
   return (

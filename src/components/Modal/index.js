@@ -20,7 +20,7 @@ const scaleAnim = {
   },
 };
 
-export default function index({ modal, disco }) {
+export default function Modal({ modal, disco }) {
   const selector = useRef(null);
 
   useEffect(() => {
