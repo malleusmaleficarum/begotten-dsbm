@@ -18,6 +18,7 @@ export default function Home() {
               alt='Logo'
               width={600}
               height={0}
+              priority={true}
             />
           </div>
           <Discography />

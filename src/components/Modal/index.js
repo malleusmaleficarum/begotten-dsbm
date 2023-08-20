@@ -59,6 +59,7 @@ export default function Modal({ modal, disco }) {
         alt='Cover'
         width={250}
         height={250}
+        priority={true}
       />
     </motion.div>
   );
