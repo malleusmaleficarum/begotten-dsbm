@@ -1,7 +1,7 @@
-import Image from "next/image";
-import style from "./style.module.scss";
-import Close from "/public/images/close.svg?svgr";
-import { motion } from "framer-motion";
+import Image from 'next/image';
+import style from './style.module.scss';
+import Close from '/public/images/close.svg?svgr';
+import { motion } from 'framer-motion';
 
 export default function ModalBio({ setModalBio }) {
   return (
@@ -12,7 +12,7 @@ export default function ModalBio({ setModalBio }) {
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
       exit={{ opacity: 0, transition: { duration: 0.3 } }}
     >
-      <div className={style["content-wrapper"]}>
+      <div className={style['content-wrapper']}>
         <Close className={style.close} onClick={() => setModalBio(false)} />
         <div className={style.overlay}>
           <Image
@@ -32,7 +32,7 @@ export default function ModalBio({ setModalBio }) {
               width={1000}
               height={0}
               priority={true}
-              style={{ marginBottom: "20px" }}
+              style={{ marginBottom: '20px' }}
             />
             <Image
               src='/images/begotten-logo.png'
@@ -56,11 +56,11 @@ export default function ModalBio({ setModalBio }) {
             </p>
           </div>
           <>
-            <div className={style["info-section"]}>
-              <div className={style["first-section"]}>
+            <div className={style['info-section']}>
+              <div className={style['first-section']}>
                 <h3>Canadian DSBM</h3>
               </div>
-              <div className={style["second-section"]}>
+              <div className={style['second-section']}>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Libero animi possimus deleniti consequatur earum esse nulla
@@ -72,11 +72,11 @@ export default function ModalBio({ setModalBio }) {
                 </p>
               </div>
             </div>
-            <div className={style["info-section"]}>
-              <div className={style["first-section"]}>
+            <div className={style['info-section']}>
+              <div className={style['first-section']}>
                 <h3>Pickering, Ontario</h3>
               </div>
-              <div className={style["second-section"]}>
+              <div className={style['second-section']}>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
                   ab soluta, accusantium minima non sunt quis sapiente
@@ -88,14 +88,14 @@ export default function ModalBio({ setModalBio }) {
               </div>
             </div>
           </>
-          <div className={style["member-section"]}>
+          <div className={style['member-section']}>
             <div>
               <h4>Bobby Prentice</h4>
-              <p>Guitar, Drums, Bass, Vocals</p>
+              <p>Guitars, Drums, Bass, Vocals</p>
             </div>
             <div>
               <h4>Dave Sherk</h4>
-              <p>Guitar, Drums, Bass, Vocals</p>
+              <p>Guitars</p>
             </div>
             <div>
               <h4>Thomas Learner</h4>
