@@ -1,18 +1,18 @@
-"use client";
-import style from "./page.module.scss";
-import Discography from "../components/Discography/index.js";
-import Social from "../components/Social";
-import Image from "next/image";
-import Hang from "/public/images/hang-2.svg?svgr";
-import ModalDiscography from "@/components/ModalDiscography";
-import ModalBio from "@/components/ModalBio";
-import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+'use client';
+import style from './page.module.scss';
+import Discography from '../components/Discography/index.js';
+import Social from '../components/Social';
+import Image from 'next/image';
+import Hang from '/public/images/hang-2.svg?svgr';
+import ModalDiscography from '@/components/ModalDiscography';
+import ModalBio from '@/components/ModalBio';
+import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const animationInit = {
   initial: {
     opacity: 0,
-    y: "10%",
+    y: '10%',
     transition: { duration: 1 },
   },
   visible: {
@@ -41,10 +41,10 @@ export default function Home() {
       <div className={style.container}>
         <motion.div
           className={style.hang}
-          initial={{ opacity: 0, y: "-70%" }}
+          initial={{ opacity: 0, y: '-70%' }}
           animate={{
             opacity: 1,
-            y: "-3%",
+            y: '-3%',
             transition: { duration: 1.5, ease: [0.47, 1.64, 0.41, 0.8] },
           }}
         >
@@ -54,7 +54,7 @@ export default function Home() {
           <motion.div
             className={style.logo}
             onClick={() => setModalBio(true)}
-            initial={{ opacity: 0, y: "10%", transition: { duration: 1 } }}
+            initial={{ opacity: 0, y: '10px', transition: { duration: 1 } }}
             animate={{
               opacity: 1,
               y: 0,
