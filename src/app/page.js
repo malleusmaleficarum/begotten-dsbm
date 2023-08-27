@@ -45,7 +45,11 @@ export default function Home() {
           animate={{
             opacity: 1,
             y: '-3%',
-            transition: { duration: 1.5, ease: [0.47, 1.64, 0.41, 0.8] },
+            transition: {
+              duration: 1.5,
+              delay: 0.5,
+              ease: [0.47, 1.64, 0.41, 0.8],
+            },
           }}
         >
           <Hang />
@@ -58,7 +62,7 @@ export default function Home() {
             animate={{
               opacity: 1,
               y: 0,
-              transition: { duration: 1, delay: 1.2 },
+              transition: { duration: 1, delay: 1.5 },
             }}
           >
             <Image
@@ -75,7 +79,7 @@ export default function Home() {
         <motion.footer
           className={style.footer}
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { delay: 1.7 } }}
+          animate={{ opacity: 1, transition: { delay: 2 } }}
         >
           <p>Copyright &copy; 2023 Begotten DSBM. All right reserved.</p>
         </motion.footer>

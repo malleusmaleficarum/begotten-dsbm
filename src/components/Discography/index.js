@@ -57,7 +57,7 @@ export default function Discography({ setModalDisco }) {
       animate={{
         opacity: 1,
         y: 0,
-        transition: { duration: 1, delay: 1.2 },
+        transition: { duration: 1, delay: 1.5 },
       }}
     >
       <Modal modal={modal} disco={discography} />

@@ -50,7 +50,7 @@ export default function Modal({ modal, disco }) {
     <motion.div
       variants={scaleAnim}
       initial='initial'
-      animate={modal.isActive ? 'active' : 'exit'}
+      animate={modal.isActive ? 'active' : 'closed'}
       className={style.modal}
       ref={selector}
     >
