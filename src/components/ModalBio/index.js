@@ -51,11 +51,18 @@ export default function ModalBio({ setModalBio }) {
               ex debitis explicabo ratione, dicta hic excepturi harum nesciunt
               enim nisi optio numquam, nam reiciendis adipisci ea totam maiores
               culpa quidem sit dolorum illo vitae, inventore eum. Iusto labore
-              corrupti molestiae, consectetur dolorem illum. Exercitationem
-              voluptates praesentium labore itaque quia cumque.
+              corrupti molestiae, consectetur dolorem illum. Aenean laoreet nisi
+              non lacus egestas, nec lobortis mi tristique. Praesent varius
+              rhoncus libero, sed efficitur est efficitur in. Mauris hendrerit
+              neque vestibulum erat cursus lacinia. Nulla nunc ante, semper ut
+              volutpat non, aliquam eget quam. Vestibulum eleifend erat feugiat
+              ligula molestie, eu aliquet tellus commodo. Phasellus vel justo ac
+              justo gravida sollicitudin eget id magna. Aenean a dolor eu neque
+              maximus accumsan a at felis. Maecenas id tristique metus.
+              Phasellus sed augue eget turpis convallis hendrerit.
             </p>
           </div>
-          <>
+          <div>
             <div className={style['info-section']}>
               <div className={style['first-section']}>
                 <h3>Canadian DSBM</h3>
@@ -83,11 +90,18 @@ export default function ModalBio({ setModalBio }) {
                   laboriosam delectus vitae earum iusto saepe praesentium nobis
                   ipsa nisi eveniet modi. Facere incidunt id minus corporis
                   dolor odit beatae alias ut officiis. Explicabo voluptatum
-                  totam possimus vel.
+                  totam possimus vel. Donec in orci quis turpis dignissim
+                  mollis. Nunc vitae tempus neque. Suspendisse id leo neque.
+                  Quisque vulputate rhoncus quam, id condimentum lorem molestie
+                  vitae. Vestibulum sollicitudin quis dolor ac euismod.
+                  Suspendisse mauris mi, vestibulum non iaculis ut, congue
+                  elementum felis. Maecenas ornare odio mi, vitae rutrum libero
+                  auctor vel. Nullam accumsan sapien quis eros accumsan, at
+                  commodo felis imperdiet.
                 </p>
               </div>
             </div>
-          </>
+          </div>
           <div className={style['member-section']}>
             <div>
               <h4>Bobby Prentice</h4>
