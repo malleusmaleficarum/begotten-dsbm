@@ -1,10 +1,17 @@
 import Image from "next/image";
 import style from "./style.module.scss";
 import Close from "/public/images/close.svg?svgr";
+import { motion } from "framer-motion";
 
 export default function ModalBio({ setModalBio }) {
   return (
-    <div className={style.container}>
+    <motion.div
+      className={style.container}
+      key='modalbio'
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 0.5 } }}
+      exit={{ opacity: 0, transition: { duration: 0.3 } }}
+    >
       <div className={style["content-wrapper"]}>
         <Close className={style.close} onClick={() => setModalBio(false)} />
         <div className={style.overlay}>
@@ -67,7 +74,7 @@ export default function ModalBio({ setModalBio }) {
             </div>
             <div className={style["info-section"]}>
               <div className={style["first-section"]}>
-                <h3>Pickerin, Ontario</h3>
+                <h3>Pickering, Ontario</h3>
               </div>
               <div className={style["second-section"]}>
                 <p>
@@ -97,6 +104,6 @@ export default function ModalBio({ setModalBio }) {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

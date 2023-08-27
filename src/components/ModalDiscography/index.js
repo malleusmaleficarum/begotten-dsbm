@@ -4,12 +4,19 @@ import style from "./style.module.scss";
 import Close from "/public/images/close.svg?svgr";
 import { cloisterBlack } from "@/utils/fonts";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function ModalDiscography({ setModalDisco }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className={style.container}>
+    <motion.div
+      className={style.container}
+      key='modaldisco'
+      initial={{ opacity: 0, y: "-10px" }}
+      animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
+      exit={{ opacity: 0, y: "-10px", transition: { duration: 0.5 } }}
+    >
       <div className={style["content-wrapper"]}>
         {/* Left Side */}
         <div className={style["first-side"]}>
@@ -100,6 +107,6 @@ export default function ModalDiscography({ setModalDisco }) {
         {/* Close Icon */}
         <Close className={style.close} onClick={() => setModalDisco(false)} />
       </div>
-    </div>
+    </motion.div>
   );
 }

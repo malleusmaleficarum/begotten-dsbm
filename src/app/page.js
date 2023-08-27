@@ -7,7 +7,7 @@ import Hang from "/public/images/hang-2.svg?svgr";
 import ModalDiscography from "@/components/ModalDiscography";
 import ModalBio from "@/components/ModalBio";
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const animationInit = {
   initial: {
@@ -81,8 +81,10 @@ export default function Home() {
         </motion.footer>
         <Social />
       </div>
-      {modalBio && <ModalBio setModalBio={setModalBio} />}
-      {modalDisco && <ModalDiscography setModalDisco={setModalDisco} />}
+      <AnimatePresence>
+        {modalBio && <ModalBio setModalBio={setModalBio} />}
+        {modalDisco && <ModalDiscography setModalDisco={setModalDisco} />}
+      </AnimatePresence>
     </main>
   );
 }
