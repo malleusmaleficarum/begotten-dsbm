@@ -14,16 +14,16 @@ const discography = [
     coverLink: '/images/a-waning-silhouette.jpg',
   },
   {
-    title: 'And The Wind Cries Death',
-    coverLink: '/images/and-the-wind-cries-death.jpg',
-  },
-  {
     title: 'If All You Have Known Is Winter',
     coverLink: '/images/if-all-you-have-known-is-winter.jpg',
   },
   {
     title: 'Black Crow Blues',
     coverLink: '/images/black-crow-blues.jpg',
+  },
+  {
+    title: 'And The Wind Cries Death',
+    coverLink: '/images/and-the-wind-cries-death.jpg',
   },
 ];
 
