@@ -47,11 +47,19 @@ const animText = {
   },
 };
 
-export default function Discography() {
+export default function Discography({ setModalDisco }) {
   const [modal, setModal] = useState({ isActive: false, index: 0 });
 
   return (
-    <main className={styles.container}>
+    <motion.main
+      className={styles.container}
+      initial={{ opacity: 0, y: "10%", transition: { duration: 1 } }}
+      animate={{
+        opacity: 1,
+        y: 0,
+        transition: { duration: 1, delay: 1.2 },
+      }}
+    >
       <Modal modal={modal} disco={discography} />
       {discography.map((disco, index) => (
         <span
@@ -65,6 +73,7 @@ export default function Discography() {
           }}
         >
           <motion.span
+            onClick={() => setModalDisco(true)}
             className={styles.discotitle}
             variants={animText}
             initial='initial'
@@ -77,6 +86,6 @@ export default function Discography() {
           </span>
         </span>
       ))}
-    </main>
+    </motion.main>
   );
 }

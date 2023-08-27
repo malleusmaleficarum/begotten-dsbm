@@ -5,17 +5,17 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 
 const scaleAnim = {
-  initial: { opacity: 0, x: "-50%", y: "-50%" },
+  initial: { opacity: 0, x: "-150%", y: "-250%" },
   active: {
     opacity: 1,
-    x: "-50%",
-    y: "-50%",
+    x: "-150%",
+    y: "-250%",
     transition: { duration: 0.4, ease: [0.76, 0, 0.24, 1] },
   },
   closed: {
     opacity: 0,
-    x: "-50%",
-    y: "-50%",
+    x: "-150%",
+    y: "-250%",
     transition: { duration: 0.4, ease: [0.65, 0, 0.35, 1] },
   },
 };
@@ -50,7 +50,7 @@ export default function Modal({ modal, disco }) {
     <motion.div
       variants={scaleAnim}
       initial='initial'
-      animate={modal.isActive ? "active" : "closed"}
+      animate={modal.isActive ? "active" : "exit"}
       className={style.modal}
       ref={selector}
     >

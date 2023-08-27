@@ -3,10 +3,15 @@ import Instagram from "/public/images/instagram.svg?svgr";
 import Bandcamp from "/public/images/bandcamp.svg?svgr";
 import Spotify from "/public/images/spotify.svg?svgr";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function Social() {
   return (
-    <div className={style.social}>
+    <motion.div
+      className={style.social}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { delay: 1.7 } }}
+    >
       <Link href={"https://www.instagram.com/begottendsbm/"} target='_blank'>
         <Instagram />
       </Link>
@@ -19,6 +24,6 @@ export default function Social() {
       >
         <Spotify />
       </Link>
-    </div>
+    </motion.div>
   );
 }
